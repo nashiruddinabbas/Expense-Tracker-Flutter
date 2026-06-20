@@ -25,11 +25,11 @@ if (flutterVersionName == null) {
 
 android {
     namespace = "com.example.expenses_tracker"
-    compileSdk = 34 // সরাসরি ৩৪ সেট করা হয়েছে নতুন প্লাগইনের জন্য
+    compileSdk = 34 
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17 // জাভা ১৭ সাপোর্ট অ্যাড করা হয়েছে
+        sourceCompatibility = JavaVersion.VERSION_17 
         targetCompatibility = JavaVersion.VERSION_17
     }
 
@@ -39,7 +39,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.expenses_tracker"
-        minSdkVersion = flutter.minSdkVersion // সাধারণত মিনিমাম ২১ লাগে ফায়ারবেসের জন্য
+        minSdkVersion = flutter.minSdkVersion 
         targetSdk = 34
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName

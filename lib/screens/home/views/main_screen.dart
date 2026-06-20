@@ -8,7 +8,6 @@ class MainScreen extends StatelessWidget {
   final List<Expense> expenses;
   const MainScreen(this.expenses, {super.key});
 
-  // Total expenses balance হিসাব করার জন্য
   double _calculateTotalExpenses(List<Expense> expenses) {
     double total = 0;
     for (var expense in expenses) {
@@ -25,7 +24,6 @@ class MainScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
         child: Column(
           children: [
-            // Welcome bar
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -62,7 +60,7 @@ class MainScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "John Doe", // টাইপো ঠিক করা হয়েছে
+                          "John Doe", 
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -108,7 +106,7 @@ class MainScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    "Total Balance", // টাইপো ঠিক করা হয়েছে
+                    "Total Balance", 
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
@@ -119,7 +117,7 @@ class MainScreen extends StatelessWidget {
                     height: 12,
                   ),
                   Text(
-                    '৳${totalExpenses.toStringAsFixed(2)}', // স্ট্রিং ইন্টারপোলেশন ঠিক করা হয়েছে
+                    '৳${totalExpenses.toStringAsFixed(2)}', 
                     style: const TextStyle(
                       fontSize: 40,
                       fontWeight: FontWeight.bold,
@@ -296,7 +294,7 @@ class MainScreen extends StatelessWidget {
                                       ),
                                     ),
                                     Image.asset(
-                                      'assets/${expenses[i].category.icon}.png', // ফিক্সড অ্যাসেট পাথ
+                                      'assets/${expenses[i].category.icon}.png', 
                                       scale: 2,
                                       color: Colors.white,
                                     ),
@@ -319,7 +317,7 @@ class MainScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text(
-                                  "৳${expenses[i].amount}.00", // ফিক্সড ইন্টারপোলেশন
+                                  "৳${expenses[i].amount}.00", 
                                   style: TextStyle(
                                     fontSize: 14,
                                     color: Theme.of(context).colorScheme.onSurface,
